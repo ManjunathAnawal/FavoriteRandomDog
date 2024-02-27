@@ -11,20 +11,25 @@
 		FD5DF1372B8992C50048EE1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1362B8992C50048EE1B /* ContentView.swift */; };
 		FD5DF1392B8992C70048EE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5DF1382B8992C70048EE1B /* Assets.xcassets */; };
 		FD5DF13C2B8992C70048EE1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5DF13B2B8992C70048EE1B /* Preview Assets.xcassets */; };
-		FD5DF1462B8992C70048EE1B /* FavDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1452B8992C70048EE1B /* FavDogTests.swift */; };
-		FD5DF1502B8992C70048EE1B /* FavDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF14F2B8992C70048EE1B /* FavDogUITests.swift */; };
-		FD5DF1522B8992C70048EE1B /* FavDogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1512B8992C70048EE1B /* FavDogUITestsLaunchTests.swift */; };
+		FD5DF1642B89A92C0048EE1B /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1632B89A92C0048EE1B /* DogImage.swift */; };
+		FD5DF1662B89A9530048EE1B /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1652B89A9530048EE1B /* PersistenceService.swift */; };
+		FD5DF1682B89A98A0048EE1B /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1672B89A98A0048EE1B /* DogViewModel.swift */; };
+		FD5DF16A2B89A9AB0048EE1B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF1692B89A9AB0048EE1B /* NetworkService.swift */; };
+		FD5DF16D2B89AF2D0048EE1B /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DF16C2B89AF2D0048EE1B /* UIViewController + Extension.swift */; };
+		FD7AC7CB2B8DBFA70085CFEA /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7CA2B8DBFA70085CFEA /* AsyncImageView.swift */; };
+		FD7AC7CD2B8DC0010085CFEA /* BreedSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7CC2B8DC0010085CFEA /* BreedSelectionView.swift */; };
+		FD7AC7CF2B8DC0270085CFEA /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7CE2B8DC0270085CFEA /* SearchBar.swift */; };
+		FD7AC7D12B8DC0AE0085CFEA /* PersistenceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7D02B8DC0AE0085CFEA /* PersistenceServiceTests.swift */; };
+		FD7AC7D32B8DC1770085CFEA /* DogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7D22B8DC1770085CFEA /* DogViewModelTests.swift */; };
+		FD7AC7D72B8DC8800085CFEA /* MockPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7D62B8DC8800085CFEA /* MockPersistenceService.swift */; };
+		FD7AC7D92B8DC8B70085CFEA /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7D82B8DC8B70085CFEA /* MockNetworkService.swift */; };
+		FD7AC7DB2B8DCA980085CFEA /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7DA2B8DCA980085CFEA /* NetworkServiceTests.swift */; };
+		FD7AC7E22B8DE4D30085CFEA /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7AC7DD2B8DE4810085CFEA /* MockURLProtocol.swift */; };
+		FD7AC7EA2B8E0DC80085CFEA /* AppTestExtension in Resources */ = {isa = PBXBuildFile; fileRef = FD7AC7E92B8E0DC70085CFEA /* AppTestExtension */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FD5DF1422B8992C70048EE1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD5DF1292B8992C40048EE1B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FD5DF1302B8992C40048EE1B;
-			remoteInfo = FavDog;
-		};
-		FD5DF14C2B8992C70048EE1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD5DF1292B8992C40048EE1B /* Project object */;
 			proxyType = 1;
@@ -40,10 +45,21 @@
 		FD5DF1382B8992C70048EE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5DF13B2B8992C70048EE1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD5DF1412B8992C70048EE1B /* FavDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD5DF1452B8992C70048EE1B /* FavDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavDogTests.swift; sourceTree = "<group>"; };
-		FD5DF14B2B8992C70048EE1B /* FavDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD5DF14F2B8992C70048EE1B /* FavDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavDogUITests.swift; sourceTree = "<group>"; };
-		FD5DF1512B8992C70048EE1B /* FavDogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavDogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD5DF1632B89A92C0048EE1B /* DogImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		FD5DF1652B89A9530048EE1B /* PersistenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		FD5DF1672B89A98A0048EE1B /* DogViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
+		FD5DF1692B89A9AB0048EE1B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FD5DF16C2B89AF2D0048EE1B /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		FD7AC7CA2B8DBFA70085CFEA /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		FD7AC7CC2B8DC0010085CFEA /* BreedSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedSelectionView.swift; sourceTree = "<group>"; };
+		FD7AC7CE2B8DC0270085CFEA /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FD7AC7D02B8DC0AE0085CFEA /* PersistenceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServiceTests.swift; sourceTree = "<group>"; };
+		FD7AC7D22B8DC1770085CFEA /* DogViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModelTests.swift; sourceTree = "<group>"; };
+		FD7AC7D62B8DC8800085CFEA /* MockPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistenceService.swift; sourceTree = "<group>"; };
+		FD7AC7D82B8DC8B70085CFEA /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		FD7AC7DA2B8DCA980085CFEA /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		FD7AC7DD2B8DE4810085CFEA /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		FD7AC7E92B8E0DC70085CFEA /* AppTestExtension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppTestExtension; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +77,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD5DF1482B8992C70048EE1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +85,6 @@
 			children = (
 				FD5DF1332B8992C40048EE1B /* FavDog */,
 				FD5DF1442B8992C70048EE1B /* FavDogTests */,
-				FD5DF14E2B8992C70048EE1B /* FavDogUITests */,
 				FD5DF1322B8992C40048EE1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +94,6 @@
 			children = (
 				FD5DF1312B8992C40048EE1B /* FavDog.app */,
 				FD5DF1412B8992C70048EE1B /* FavDogTests.xctest */,
-				FD5DF14B2B8992C70048EE1B /* FavDogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +101,13 @@
 		FD5DF1332B8992C40048EE1B /* FavDog */ = {
 			isa = PBXGroup;
 			children = (
-				FD5DF1342B8992C50048EE1B /* FavDogApp.swift */,
-				FD5DF1362B8992C50048EE1B /* ContentView.swift */,
-				FD5DF1382B8992C70048EE1B /* Assets.xcassets */,
+				FD5DF15E2B89A8ED0048EE1B /* Model */,
+				FD5DF15F2B89A8F50048EE1B /* View */,
+				FD5DF1602B89A8FB0048EE1B /* ViewModel */,
+				FD5DF1622B89A90B0048EE1B /* NetworkLayer */,
+				FD5DF1612B89A9030048EE1B /* DataLayer */,
+				FD5DF16B2B89AF0A0048EE1B /* Utils */,
+				FD7AC7DC2B8DD6D80085CFEA /* Other */,
 				FD5DF13A2B8992C70048EE1B /* Preview Content */,
 			);
 			path = FavDog;
@@ -113,18 +124,99 @@
 		FD5DF1442B8992C70048EE1B /* FavDogTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD5DF1452B8992C70048EE1B /* FavDogTests.swift */,
+				FD7AC7DF2B8DE4AE0085CFEA /* DataLayer */,
+				FD7AC7E02B8DE4BA0085CFEA /* ViewModel */,
+				FD7AC7E92B8E0DC70085CFEA /* AppTestExtension */,
+				FD7AC7E12B8DE4C50085CFEA /* NetworkLayer */,
 			);
 			path = FavDogTests;
 			sourceTree = "<group>";
 		};
-		FD5DF14E2B8992C70048EE1B /* FavDogUITests */ = {
+		FD5DF15E2B89A8ED0048EE1B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FD5DF14F2B8992C70048EE1B /* FavDogUITests.swift */,
-				FD5DF1512B8992C70048EE1B /* FavDogUITestsLaunchTests.swift */,
+				FD5DF1632B89A92C0048EE1B /* DogImage.swift */,
 			);
-			path = FavDogUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD5DF15F2B89A8F50048EE1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DF1362B8992C50048EE1B /* ContentView.swift */,
+				FD7AC7CE2B8DC0270085CFEA /* SearchBar.swift */,
+				FD7AC7CA2B8DBFA70085CFEA /* AsyncImageView.swift */,
+				FD7AC7CC2B8DC0010085CFEA /* BreedSelectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD5DF1602B89A8FB0048EE1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DF1672B89A98A0048EE1B /* DogViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD5DF1612B89A9030048EE1B /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DF1652B89A9530048EE1B /* PersistenceService.swift */,
+				FD7AC7D62B8DC8800085CFEA /* MockPersistenceService.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		FD5DF1622B89A90B0048EE1B /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DF1692B89A9AB0048EE1B /* NetworkService.swift */,
+				FD7AC7D82B8DC8B70085CFEA /* MockNetworkService.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		FD5DF16B2B89AF0A0048EE1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DF16C2B89AF2D0048EE1B /* UIViewController + Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FD7AC7DC2B8DD6D80085CFEA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DF1382B8992C70048EE1B /* Assets.xcassets */,
+				FD5DF1342B8992C50048EE1B /* FavDogApp.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FD7AC7DF2B8DE4AE0085CFEA /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FD7AC7D02B8DC0AE0085CFEA /* PersistenceServiceTests.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		FD7AC7E02B8DE4BA0085CFEA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD7AC7D22B8DC1770085CFEA /* DogViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD7AC7E12B8DE4C50085CFEA /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FD7AC7DA2B8DCA980085CFEA /* NetworkServiceTests.swift */,
+				FD7AC7DD2B8DE4810085CFEA /* MockURLProtocol.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +257,6 @@
 			productReference = FD5DF1412B8992C70048EE1B /* FavDogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FD5DF14A2B8992C70048EE1B /* FavDogUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD5DF15B2B8992C70048EE1B /* Build configuration list for PBXNativeTarget "FavDogUITests" */;
-			buildPhases = (
-				FD5DF1472B8992C70048EE1B /* Sources */,
-				FD5DF1482B8992C70048EE1B /* Frameworks */,
-				FD5DF1492B8992C70048EE1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FD5DF14D2B8992C70048EE1B /* PBXTargetDependency */,
-			);
-			name = FavDogUITests;
-			productName = FavDogUITests;
-			productReference = FD5DF14B2B8992C70048EE1B /* FavDogUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +271,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					FD5DF1402B8992C70048EE1B = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = FD5DF1302B8992C40048EE1B;
-					};
-					FD5DF14A2B8992C70048EE1B = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = FD5DF1302B8992C40048EE1B;
 					};
@@ -221,7 +291,6 @@
 			targets = (
 				FD5DF1302B8992C40048EE1B /* FavDog */,
 				FD5DF1402B8992C70048EE1B /* FavDogTests */,
-				FD5DF14A2B8992C70048EE1B /* FavDogUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,13 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD5DF1492B8992C70048EE1B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FD7AC7EA2B8E0DC80085CFEA /* AppTestExtension in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7AC7D92B8DC8B70085CFEA /* MockNetworkService.swift in Sources */,
 				FD5DF1372B8992C50048EE1B /* ContentView.swift in Sources */,
+				FD5DF1662B89A9530048EE1B /* PersistenceService.swift in Sources */,
+				FD5DF1682B89A98A0048EE1B /* DogViewModel.swift in Sources */,
+				FD7AC7CD2B8DC0010085CFEA /* BreedSelectionView.swift in Sources */,
+				FD7AC7CB2B8DBFA70085CFEA /* AsyncImageView.swift in Sources */,
+				FD5DF16D2B89AF2D0048EE1B /* UIViewController + Extension.swift in Sources */,
+				FD7AC7D72B8DC8800085CFEA /* MockPersistenceService.swift in Sources */,
+				FD5DF1642B89A92C0048EE1B /* DogImage.swift in Sources */,
+				FD7AC7CF2B8DC0270085CFEA /* SearchBar.swift in Sources */,
+				FD5DF16A2B89A9AB0048EE1B /* NetworkService.swift in Sources */,
 				FD5DF1352B8992C50048EE1B /* FavDogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,16 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5DF1462B8992C70048EE1B /* FavDogTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD5DF1472B8992C70048EE1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD5DF1502B8992C70048EE1B /* FavDogUITests.swift in Sources */,
-				FD5DF1522B8992C70048EE1B /* FavDogUITestsLaunchTests.swift in Sources */,
+				FD7AC7D32B8DC1770085CFEA /* DogViewModelTests.swift in Sources */,
+				FD7AC7DB2B8DCA980085CFEA /* NetworkServiceTests.swift in Sources */,
+				FD7AC7D12B8DC0AE0085CFEA /* PersistenceServiceTests.swift in Sources */,
+				FD7AC7E22B8DE4D30085CFEA /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +353,6 @@
 			isa = PBXTargetDependency;
 			target = FD5DF1302B8992C40048EE1B /* FavDog */;
 			targetProxy = FD5DF1422B8992C70048EE1B /* PBXContainerItemProxy */;
-		};
-		FD5DF14D2B8992C70048EE1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FD5DF1302B8992C40048EE1B /* FavDog */;
-			targetProxy = FD5DF14C2B8992C70048EE1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -429,6 +491,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -508,40 +572,6 @@
 			};
 			name = Release;
 		};
-		FD5DF15C2B8992C70048EE1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.manju.anawal.com.FavDogUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FavDog;
-			};
-			name = Debug;
-		};
-		FD5DF15D2B8992C70048EE1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.manju.anawal.com.FavDogUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FavDog;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +598,6 @@
 			buildConfigurations = (
 				FD5DF1592B8992C70048EE1B /* Debug */,
 				FD5DF15A2B8992C70048EE1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD5DF15B2B8992C70048EE1B /* Build configuration list for PBXNativeTarget "FavDogUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD5DF15C2B8992C70048EE1B /* Debug */,
-				FD5DF15D2B8992C70048EE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
